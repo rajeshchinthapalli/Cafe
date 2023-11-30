@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Coffee</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-size: 50%;
+            background-position: center;
+            color: #ffffff; /* Set text color to white or a suitable contrast */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin-top: 50px;
+            text-align: center;
+            background-image: url('https://www.healthifyme.com/blog/wp-content/uploads/2022/06/Black-Coffee-2-1.jpg');
+            padding: 200px 200px 200px 200px;
+        }
+        .btn-primary {
+            background-color: #ffc107;
+            border-color: #ffc107;
+        }
+        p {
+            color: #ff5733;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Coffee shop</h1>
+        <p><i>Welcome to our cozy coffee shop! We take pride in serving the finest coffee in a warm and inviting atmosphere. Whether you're a coffee connoisseur or just looking for a relaxing place to unwind, our cafe is the perfect spot. Our diverse menu offers a variety of coffee blends, delicious pastries, and comfortable seating. Come join us and experience the joy of great coffee and delightful ambiance.</i></p>
+        <a href="{{url_for('get_random_cafe')}}" class="btn btn-primary">View Cafe</a>
+    </div>
+</body>
+</html>
