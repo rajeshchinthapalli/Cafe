@@ -6,9 +6,9 @@ import os
 app = Flask(__name__)
 CORS(app)  # Configure CORS on the same app instance
 
-app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
+app.config['SECRET_KEY'] = os.environ.geet('SECRET_KEY')
 #dbn
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('SQLALCHEMY_DATABASE_URI')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.geet('SQLALCHEMY_DATABASE_URI')
 db = SQLAlchemy(app)
 
 
